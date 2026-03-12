@@ -2,7 +2,7 @@
 # Week 4: JavaScript Fundamentals
 
 ## Author
-- **Name:** maureenmuchoki-hub.github.io
+- **Name:** Maureen Muchoki
 - **GitHub:** [@Maureemuchoki](https://github.com/Maureenmuchoki)
 - **Date:** March 12, 2026
 
