@@ -47,7 +47,7 @@ One challenge was understanding how to structure logic in loops and conditions, 
 
 [View FizzBuzz Console Output](fizzbuzz-output.png)
 
-[View Student Grade Tracker Output](student-grade-tracker-output.png)
+[View Student Grade Tracker Output](Student%20Grade%20Tracker%20Output.png)
 
 ## Live Demo (if deployed)
 
