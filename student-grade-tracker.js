@@ -1,5 +1,5 @@
+function generateReport() {
 
-        function generateReport() {
     // Get input values
     const name = document.getElementById("name").value.trim();
     const math = Number(document.getElementById("math").value);
@@ -16,19 +16,21 @@
     // Calculate average
     const average = ((math + english + science + computer) / 4).toFixed(2);
 
-    // Determine letter grade
+    // Determine letter grade and remarks
     let letterGrade = "";
+    let remarks = "";
+
     if (average >= 85){
         letterGrade = "A";
         remarks = "Excellent performance. Keep up the great work!";
     }
     else if (average >= 75){
         letterGrade = "B";
-        remarks = "Excellent performance. Keep up the great work!";
+        remarks = "Very good performance. Keep it up!";
     }
     else if (average >= 65){ 
         letterGrade = "C";
-        remarks = "Excellent performance. Keep up the great work!";
+        remarks = "Good effort. There is room for improvement.";
     }
     else if (average >= 50){ 
         letterGrade = "D";
@@ -41,6 +43,7 @@
 
     // Display report
     const reportDiv = document.getElementById("report");
+
     reportDiv.innerHTML = `
         <h2>Report Card for ${name}</h2>
         <p>Math: ${math}</p>
@@ -48,7 +51,6 @@
         <p>Science: ${science}</p>
         <p>Computer Studies: ${computer}</p>
         <p><strong>Average: ${average}</strong></p>
-
         <p><strong>Letter Grade: ${letterGrade}</strong></p>
         <p><strong>Final Remarks:</strong> ${remarks}</p>
     `;
