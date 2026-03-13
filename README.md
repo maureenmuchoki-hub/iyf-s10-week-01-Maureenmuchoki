@@ -49,10 +49,15 @@ One challenge was understanding how to structure logic in loops and conditions, 
 
 [View Student Grade Tracker Output](screenshots/Student%20Grade%20Tracker%20Output.png)
 
-## Live Demo (if deployed)
+## Live Demo
 
 [View Live Demo](https://maureenmuchoki-hub.github.io/iyf-s10-week-04-Maureenmuchoki/)
 
 [Student Grade Tracker](https://maureenmuchoki-hub.github.io/iyf-s10-week-04-Maureenmuchoki/htmls/Add.html)
 
 [FizzBuzz](https://maureenmuchoki-hub.github.io/iyf-s10-week-04-Maureenmuchoki/htmls/FizzBuzz.html)
+
+
+
+- [Student Grade Tracker](https://maureenmuchoki-hub.github.io/iyf-s10-week-04-Maureenmuchoki/Add%20HTML/student-grade-tracker.html)
+- [FizzBuzz](https://maureenmuchoki-hub.github.io/iyf-s10-week-04-Maureenmuchoki/FizzBuzz.html)
