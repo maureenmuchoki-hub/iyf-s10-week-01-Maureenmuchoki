@@ -20,6 +20,8 @@
     <label>Math: <input type="number" id="math" placeholder="0-100"></label><br>
     <label>English: <input type="number" id="english" placeholder="0-100"></label><br>
     <label>Science: <input type="number" id="science" placeholder="0-100"></label><br>
+    <label>Computer Studies: <input type="number" id="computer" placeholder="0-100"></label><br>
+
 
     <button onclick="generateReport()">Generate Report</button>
 
@@ -32,22 +34,23 @@
     const math = Number(document.getElementById("math").value);
     const english = Number(document.getElementById("english").value);
     const science = Number(document.getElementById("science").value);
+    const computer = Number(document.getElementById("computer").value);
 
     // Validate input
-    if (!name || isNaN(math) || isNaN(english) || isNaN(science)) {
+    if (!name || isNaN(math) || isNaN(english) || isNaN(science) || isNaN(computer)) {
         alert("Please fill in all fields with valid numbers!");
         return;
     }
 
     // Calculate average
-    const average = ((math + english + science) / 3).toFixed(2);
+    const average = ((math + english + science + computer) / 4).toFixed(2);
 
     // Determine letter grade
     let letterGrade = "";
-    if (average >= 90) letterGrade = "A";
-    else if (average >= 80) letterGrade = "B";
-    else if (average >= 70) letterGrade = "C";
-    else if (average >= 60) letterGrade = "D";
+    if (average >= 85) letterGrade = "A";
+    else if (average >= 75) letterGrade = "B";
+    else if (average >= 65) letterGrade = "C";
+    else if (average >= 50) letterGrade = "D";
     else letterGrade = "F";
 
     // Display report
@@ -57,7 +60,9 @@
         <p>Math: ${math}</p>
         <p>English: ${english}</p>
         <p>Science: ${science}</p>
+        <p>Computer Studies: ${computer}</p>
         <p><strong>Average: ${average}</strong></p>
+
         <p><strong>Letter Grade: ${letterGrade}</strong></p>
     `;
 } 
